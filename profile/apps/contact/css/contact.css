@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(74,0,224);
+    background: linear-gradient(90deg, rgba(74,0,224,0.14700838414634143) 0%, rgba(142,45,226,0.1500571646341463) 35%);
+    overflow-y: hidden;
+}
+
+#profile_box{
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/profile_bg.png);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#profile_pic{
+    width: 100px;
+    height: 100px;
+    border: 4px solid white;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+#new_contact{
+    font-size: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    color: rgb(74,0,224);
+    cursor: pointer;
+}
+
+#contact_bg{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#add_contact_box{
+    width: 35%;
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 150px;
+}
+
+#add_contact_box h1{
+    text-align: center;
+    color: rgb(74,0,224);
+    font-family: ubuntu;
+    margin-bottom: 10px;
+}
+
+#c_name,#c_num{
+    width: 100%;
+    padding: 10px;
+    font-family: ubuntu;
+    font-size: 20px;
+    border: none;
+    border: 1px solid rgb(74,0,224);
+    border-left: 5px solid rgb(74,0,224);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#add,#close{
+    width: 100px;
+    padding: 10px;
+    background-color: rgb(74,0,224);
+    border: none;
+    font-family: ubuntu;
+    color: white;
+    outline: none;
+    margin-top: 10px;
+}
+
+#main_all_contact_box{
+    width: 35%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#contact_header{
+    width: 100%;
+    height: 20%;
+}
+
+#contact_header h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: ubuntu;
+    padding-top: 20px;
+}
+
+#search{
+    width: 100%;
+    padding: 10px;
+    padding-left: 3px;
+    font-size: 20px;
+    font-family: ubuntu;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: inherit;
+    margin-top: 20px;
+    outline: none;
+}
+
+#all_contact_box{
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    margin-top: 20px;
+    overflow-y: scroll;
+}
+
+#all_contact_box::-webkit-scrollbar{
+    width: 5px;
+}
+
+#all_contact_box::-webkit-scrollbar-track{
+    background-color: inherit;
+}
+
+#all_contact_box::-webkit-scrollbar-thumb{
+    background-color: rgb(74,0,224);
+}
+
+#all_contact_box::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(38, 4, 106);
+}
+
+#contact{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px #ccc;
+    margin: 15px 0;
+}
+
+#contact p{
+    font-size: 20px;
+    font-family: ubuntu;
+    margin: 5px 0;
+}
+
+#contact hr{
+    margin: 14px 30px;
+}
+
+.fa-phone{
+    font-size: 17.5px;
+}
+
+#tool{
+    width: 25px;
+    float: right;
+    margin-top: -37px;
+}
+
+#tool i{
+    font-size: 20px;
+    margin: 13px;
+    margin-left: 0;
+}
+
+/* Responsive Coding */
+@media (max-width:1025px){
+    #tool{
+        margin-top: -37px;
+    }
+}
+
+@media (max-width:769px){
+    #main_all_contact_box{
+        width: 50%;
+    }
+    #all_contact_box{
+        margin-top: -10px;
+    }
+    #add_contact_box{
+        width: 50%;
+    }
+}
+
+@media (max-width:568px){
+    #main_all_contact_box{
+        width: 100%;
+        padding: 20px;
+    }
+    #profile_box{
+        display: none;
+    }
+    #all_contact_box{
+        margin-top: 5px;
+    }
+    #new_contact{
+        bottom: 20px;
+        right: 20px;
+    }
+    #add_contact_box{
+        width: 90%;
+    }
+}
+
+@media (max-width:321px){
+    #main_all_contact_box{
+        width: 100%;
+        padding: 5px;
+    }
+    #all_contact_box{
+        margin-top: -10px;
+    }
+}

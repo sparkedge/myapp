@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(74,0,224);
+    background: linear-gradient(90deg, rgba(74,0,224,0.14700838414634143) 0%, rgba(142,45,226,0.1500571646341463) 35%);
+    
+}
+
+#page{
+    width: 300px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 15px;
+    padding: 25px 15px;
+}
+
+.ubuntu-medium {
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#signup{
+    display: none;
+}
+
+#login_email, #login_password, #username, #email, #phone, #password{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    padding-left: 3px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+    outline: none;
+    color: #727272;
+    background-color: inherit;
+}
+
+#login_frm{
+    margin-top: 30px;
+}
+
+#signup_frm{
+    margin-top: 10px;
+}
+
+#login_btn, #signup_btn{
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    background: #8E2DE2; 
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    outline: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+#login p, #signup p{
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center; 
+}
+
+#login span, #signup span{
+    color: blue;
+    cursor: pointer;
+}
+
+#email_notice,#login_email_warning,#login_password_warning{
+    color: rgb(255, 0, 0);
+    margin-top: 3px;
+    display: none;
+}

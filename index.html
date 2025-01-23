@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div id="container">
+        <div id="page">
+            <div id="login" class="animate__animated animate__bounceIn">
+            <h1 align="center" class="ubuntu-medium">Login</h1>
+            <form id="login_frm" autocomplete="off">
+                <input type="email" placeholder="Email Id" required id="login_email">
+                <small id="login_email_warning" class="ubuntu-medium"><i class="fa fa-exclamation-triangle"></i> Email id not registered.</small>
+                <input type="password" placeholder="Password" required id="login_password">
+                <small id="login_password_warning" class="ubuntu-medium"><i class="fa fa-exclamation-triangle"></i> Wrong password.</small>
+                <button type="submit" id="login_btn">Login</button>
+            </form>
+            <p class="ubuntu-medium">Don't have an account? <span id="signup_link">Sign up</span></p>
+            </div>
+            <div id="signup" class="animate__animated animate__zoomInDown">
+            <h1 align="center" class="ubuntu-medium">Sign Up</h1>
+            <form id="signup_frm" autocomplete="off">
+                <input type="name" required placeholder="Name" id="username">
+                <input type="email" required placeholder="Email" id="email">
+                <small id="email_notice" class="ubuntu-medium"><i class="fa fa-exclamation-triangle"></i> Email id already exist.</small>
+                <input type="number" required placeholder="Phone" id="phone">
+                <input type="password" required placeholder="Password" id="password">
+                <button type="submit" id="signup_btn" class="ubuntu-medium">Sign Up</button>
+            </form>
+            <p class="ubuntu-medium">Already have an account? <span id="login_link">Login</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!--start external javascript page-->
+    <script src="js/index.js"></script>
+    <script src="js/login_signup.js"></script>
+    <!--end external javascript page-->
+</body>
+</html>
